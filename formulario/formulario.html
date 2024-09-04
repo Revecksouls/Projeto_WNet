@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(99deg,rgb(180, 180, 56),rgb(40, 51, 151));
+        }
+        .box{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 3.8%;
+            border-radius: 4%;
+            width: 28%;
+            border: white solid 3px;
+        }
+        fieldset{
+            border-radius: 3%; 
+            padding: 4%;
+            border: 3px solid white;
+        }
+        .input1{
+            width: 100%;
+            background-color: dodgerblue;
+            color: white;
+            font-size: 95%;
+            padding: 1%;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+        .input1:hover{top:-4px;box-shadow:0 4px 4px #999;
+        transition: all .2s ease-in-out;
+        position:relative;top:0;padding:4px;background-color:rgb(40, 51, 151);
+            transition: all .2s ease-in-out
+        }
+        legend{
+           text-align: center;
+           font-size: 115%; 
+        }
+        .inputbox{
+            position: relative;  
+        }
+        .inputUser{
+            background-color: transparent;
+            border: transparent;
+            border-radius: 0%;
+            border-bottom:  1px solid white;
+            outline: none;
+            color: white;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <form action="">
+            <fieldset> 
+                <b><legend>Cadastro de Cliente</legend></b>
+                <br>
+                <br>
+                <div class="inputbox">
+                    <label for="nome" class="labelinput">Nome Completo</label>
+                    <input type="text" name="nome" id="nome" class="inputUser" required>
+                </div>
+                <br>
+                <div class="inputbox">
+                    <label for="email" class="labelinput">Email</label>
+                    <input type="text" name="email" id="email" class="inputUser" required>
+                </div>
+                <br>
+                <div class="inputbox">
+                    <label for="cpf" class="labelinput">CPF</label>
+                    <input type="text" name="cpf" id="cpf" class="inputUser" required>
+                </div>
+                <br>
+                <div class="inputbox">
+                    <label for="telefone" class="labelinput">Telefone</label>
+                    <input type="tel" name="telefone" id="telefone" class="inputUser" required>
+                </div>
+                <p>Sexo:</p>
+                <input type="radio" name="Sexo" value="Feminino" required>
+                <label for="Feminino">Feminino</label>
+                <br>
+                <input type="radio" name="Sexo" value="Masculino" required>
+                <label for="Masculino">Masculino</label>
+                <br>
+                <div class="inputbox"> <br>
+                    <label for="data_nascimento">Data de Nascimento:</label>
+                    <input type="date" name="data_nascimento" id="data" class="inputUser" required>
+                </div>
+                <br>
+                <div class="inputbox">
+                    <label for="cidade" class="labelinput">Cidade</label>
+                    <input type="text" name="cidade" id="cidade" class="inputUser" required>
+                </div>
+                <br>
+                <div class="inputbox">
+                    <label for="estado" class="labelinput">Estado</label>
+                    <input type="text" name="estado" id="estado" class="inputUser" required>
+                </div>
+                <br>
+                <div class="inputbox">
+                    <label for="endereco" class="labelinput">Endereço</label>
+                    <input type="text" name="endereco" id="endereco" class="inputUser" required>
+                </div>
+                <br>
+                <input class="input1" type="submit" name="submit" id="submit">
+         </fieldset>
+        </form>
+    </div>
+</body>
+</html>
